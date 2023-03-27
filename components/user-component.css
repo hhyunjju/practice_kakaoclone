@@ -1,0 +1,117 @@
+.user-imgbox{
+    width:50px;
+    height:50px;
+    border-radius:18px;
+    overflow:hidden;
+}
+.user-component__column img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.user-component{
+    display:flex;
+    justify-content: space-between;
+}
+.user-component__column{
+    display:flex;
+    align-items: center;
+}
+.user-name{
+    font-size:11.5px;
+    font-weight: 600;
+}
+.user-subtitle{
+    font-size:10px;
+    zoom:0.95;
+    border: var(--main-border);
+    border-radius:20px;
+    padding: 6px 9px;
+}
+.friend-list .user-subtitle{
+    border: 1px solid rgb(65, 195, 60)
+}
+.user-component__info{
+    margin-left: 10px;
+}
+/* .user-component, .list-heading{
+    padding-bottom: 15px;
+} */
+.user-component{
+    padding: 7px 0;
+}
+.list-heading{
+    padding-bottom: 8px;
+}
+.user-list-frame{
+    margin-top: 8px;
+    border-top: var(--main-border);
+}
+
+.list-heading{
+    display:flex;
+    justify-content: space-between;
+    font-size:10px;
+    zoom:0.95;
+    color: rgba(0,0,0,0.5);
+    padding-top: 15px;
+    align-items: center;
+}
+.user-imgbox--sm{
+    width:38px;
+    height:38px;
+    border-radius:15px;
+    overflow:hidden;   
+}
+.user-imgbox--multiprofile{
+    background-color: rgba(244, 244, 244, 0.937);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-imgbox--multiprofile i{
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+}
+body{
+    height:200vh;
+}
+.user-name i{
+    margin-left:4px;
+    font-size: 13px;
+    color: #FF5E6D;
+}
+
+.user-imgbox--birthday{
+    background-color:#FF5E6D;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-imgbox--birthday i{
+    font-size: 17px;
+}
+.user-name__count{
+    margin-left: 6px;
+    color: rgba(0,0,0,0.4);
+}
+.user-component__info{
+    display:flex;
+    flex-direction: column;
+}
+.user-state{
+    font-size: 10.5px;
+    letter-spacing: 0.5px;
+    color: rgba(0,0,0,0.6);
+    margin-top: 4px;
+}
+/* state부분을 없애지 않고 텍스트만 지웠을 때 margin이 있으면 어떻게 되나? 
+text를 지운 부분은 다른 공간에 영향을 준다. 즉, state를 안쓰는 부분은 일일이 지워줘야 가운데 정렬 제대로 할 수 있음.*/
+.user-component:hover{
+    background-color: rgba(0,0,0,0.03);
+}
+.user-component--multiprofile:hover{
+    background-color:inherit;
+}

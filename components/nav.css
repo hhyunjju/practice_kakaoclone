@@ -1,0 +1,60 @@
+.nav{
+    position:fixed;
+    height:100vh;
+    /* vh로 해야 화면 크기에 따라 유동성 있게 크기 바뀜. px로 하면 크기 고정. */
+    width:60px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color:#ECECED;
+    z-index:10;
+}
+.main-nav, .sub-nav{
+    display:flex;
+    flex-direction: column;
+}
+.main-nav i{
+    font-size:19px;
+    margin-top:35px;
+    opacity:0.2;
+}
+.sub-nav{
+    padding-bottom: 92px;
+}
+.sub-nav i{
+    font-size:16px;
+    margin-bottom:20px;
+    opacity:0.8;
+}
+
+.nav__friend .fa-user, .nav__chat .fa-comment, .nav__more .fa-ellipsis{
+    opacity:0.8;
+}
+.red-dot{
+    background-color: tomato;
+    color:white;
+    padding: 3px 4px;
+    font-size: 10px;
+    font-weight:600;
+    border-radius:50%;
+    position:absolute;
+    top:27px;
+    right:8px;
+}
+
+.red-badge{
+    background-color: rgba(255,99,71,1);
+    color:white;
+    padding: 3px 5px;
+    font-size: 10px;
+    font-weight:600;
+    border-radius:8px;
+    position:absolute;
+    top:27px;
+    right:3px;
+    /* 뒤에가 비치는 것처럼 보인 이유는 opacity가 들어간 아이콘이 뱃지 아이콘 위에 있었기 때문 -> 둘의 순서를 바꿔서 해결함. */
+}
+.more-icon, .chat-icon{
+    position:relative;
+}

@@ -1,0 +1,66 @@
+.search-name{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:10px;
+}
+.search-name__x{
+    width:5vw;
+    font-size: 15px;
+    text-align: center;
+    padding-left:16px;
+}
+.inside-input i, .inside-input span{
+    position:absolute;
+}
+
+.inside-input i{
+    left: 15px;
+    top:10px;
+    font-size:12px;
+}
+.inside-input span{
+    right: 10px;
+    top:11px;
+    font-size:11px;
+    border-left:1px solid rgba(0,0,0,0.2);
+    padding-left:7px;
+}
+/* relative는 형제관계에선 설정할 수 없다는거 명심! 잘 적용 안되면 부모 div만들어서 거기에 적용해보기 */
+
+.search-name__input{
+    position:relative;
+    width:100%;
+    height:30px;
+}
+/* div로 감싸줘야 100%를 했을 때 x의 공간을 뺀 나머지 전체가 선택됨. */
+.search-name__input input{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+    border: none;
+    background-color: #F2F2F2;
+    text-indent: 35px;
+    font-size: 12px;
+}
+.search-name__input input::placeholder, .inside-input{
+    color:rgba(0,0,0,0.4);
+}
+.search-name__input input:focus{
+    outline:0;
+    background-color: white;
+    border: 0.8px solid black;
+}
+/* 아무리 border:none으로 해도 focus일 때 border가 안사라졌었는데 outline:0으로 해결; outline은 포커스일 때 적용되는 기능임. */
+/* focus일 때 바꿀 수 있는건 input이나 form이어서 안되나?고민했었지만 클로닝할 때도 했었던 거 보면 가능함. focus-within사용해서 성공. 바꾸는 selector보다 state 조건문이 중요한 듯.*/
+/* 아무래도 더 큰 덩어리: fovus-within일 때 그 안에 속하는 덩어리를 변화시킬 수 있는 듯. 형제관계면 변화시킬 수 없음. */
+.search-name__input:focus-within .inside-input{
+    color:black;
+}
+.search-name__x a{
+    border-radius:50%;
+    padding: 7px 10px;
+}
+.search-name__x a:hover{
+    background-color:rgba(0,0,0,0.02);
+}

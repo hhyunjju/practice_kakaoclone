@@ -1,0 +1,24 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Inconsolata:wght@400;600;800&family=Raleway:wght@400;600&display=swap');
+
+/* screens css */
+@import "screens/find-friend.css";
+
+/* components css */
+@import "components/nav.css";
+@import "components/bottom-bar.css";
+@import "components/variables.css";
+@import "components/user-component.css";
+@import "components/status-bar.css";
+
+body{
+    font-family: 'Homemade Apple', cursive;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Raleway', sans-serif;
+}
+.main-frame{
+    margin-left:80px;
+    margin-right:20px;
+    padding-top:35px;
+    /* margin-top으로 하면 screen자체의 길이가 길어져서 vh로 높이를 설정해놨던 nav바의 위치도 내려간다. */
+}

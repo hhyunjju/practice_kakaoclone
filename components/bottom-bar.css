@@ -1,0 +1,33 @@
+.bottom-bar{
+    position:fixed;
+    bottom:0;
+    background-color:#F8F8F8;
+    width:100vw;
+    height:92px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    z-index:20;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/* fixed가 두개일 때는 겹치는 부분을 그대로 놓고 꽉채워서 fixed css를 만든 후 padding으로 보여지는 부분을 조절한다. */
+.bottom-bar img{
+   width:110px;
+   height:60px;
+}
+.bottom-bar__text{
+    width:130px;
+    height:60px;
+    margin-left:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bottom-bar__description{
+    font-size:11px;
+    font-weight: 600;
+}
+.bottom-bar__title{
+    font-size:10px;
+    color: rgba(0,0,0,0.4);
+}
