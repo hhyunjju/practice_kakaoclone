@@ -31,14 +31,24 @@
 .friend-list .user-subtitle{
     border: 1px solid rgb(65, 195, 60)
 }
+.chatting-list .user-subtitle{
+    border:none;
+    padding:0;
+    padding-bottom: 7px;
+    color: rgba(0,0,0,0.4)
+}
+.chatting-list .user-state{
+    line-height: 1.15;
+}
 .user-component__info{
     margin-left: 10px;
 }
-/* .user-component, .list-heading{
-    padding-bottom: 15px;
-} */
+
 .user-component{
     padding: 7px 0;
+}
+.chatting-list__list .user-component{
+    padding: 12px 0;
 }
 .list-heading{
     padding-bottom: 8px;
@@ -63,6 +73,14 @@
     border-radius:15px;
     overflow:hidden;   
 }
+.user-imgbox--md{
+    width:40px;
+    height:40px;
+    border-radius: 16px;
+    overflow:hidden;
+    min-width:40px;
+}
+/* min-width, max-width로 px 설정해도 스크린 크기에 따라 크기 바뀌는 태그들 크기 고정 가능! */
 .user-imgbox--multiprofile{
     background-color: rgba(244, 244, 244, 0.937);
     display:flex;
@@ -114,4 +132,16 @@ text를 지운 부분은 다른 공간에 영향을 준다. 즉, state를 안쓰
 }
 .user-component--multiprofile:hover{
     background-color:inherit;
+}
+.user-component__column .red-badge{
+    position:static;
+}
+.user-component__column:last-child{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.chatting-list__list .user-subtitle{
+    width:45px;
 }

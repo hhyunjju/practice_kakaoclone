@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-Room</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body class="body__chat-room">
+    <div class="chat-room-top-fixed">
+    <div class="chat-room-bar">
+        <div class="chat-room-bar__column">
+            <div  class="chat-user__imgbox">
+                <img src="screenshots/마루.jpg"/>
+            </div>
+            <div class="chat-user__info">
+                <span class="chat-user__name">강마루</span>
+                <div class="chat-user__member">
+                    <i class="fa-solid fa-user"></i>
+                    <span>2</span>
+                </div>
+            </div>
+        </div>
+        <div class="chat-room-bar__column">
+            <a href="chat-room-find.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-video"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>  
+    </div>
+    <main class="main-frame__chat-room">
+        <div class="chat-room__row">
+        <div class="chat-room__time">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span>2023년 3월 30일 목요일</span>
+        </div>
+    </div>
+        <div class="message message-left">
+            <div  class="message__column chat-user__imgbox">
+                <img src="screenshots/마루.jpg"/>
+            </div>
+            <div class="message__column">
+                <span class="message-name">강마루</span>
+                <div class="massage-bubble">
+                    <span>언니 안녕</span>
+                </div>
+            </div>
+            <div class="message__column">
+                <span class="message-time">오후 2:54</span>
+            </div>
+        </div>
+        <div class="message message-right">
+            <div  class="message__column">
+            </div>
+            <div class="message__column">
+                <span class="message-name"></span>
+                <div class="massage-bubble">
+                    <span>마루 일어나</span>
+                </div>
+            </div>
+            <div class="message__column">
+                <span class="message-time">오후 2:56</span>
+            </div>
+        </div>
+        <div class="message message-left">
+            <div  class="message__column chat-user__imgbox">
+                <img src="screenshots/마루.jpg"/>
+            </div>
+            <div class="message__column">
+                <span class="message-name">강마루</span>
+                <div class="massage-bubble">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, distinctio? Soluta, molestiae assumenda tempore suscipit vitae necessitatibus quae, officiis perspiciatis reiciendis, dolor et voluptatibus! Distinctio adipisci pariatur ullam possimus nostrum.</span>
+                </div>
+            </div>
+            <div class="message__column">
+                <span class="message-time">오후 2:54</span>
+            </div>
+        </div>
+        <div class="message message-right">
+            <div  class="message__column">
+            </div>
+            <div class="message__column">
+                <span class="message-name"></span>
+                <div class="massage-bubble">
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis voluptatibus fuga minima inventore, qui officiis dolor nostrum! Assumenda, amet iure ipsum voluptatem dignissimos ut, ad ratione adipisci fugiat doloremque neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequatur molestias ullam facere illum odio provident vel, libero quisquam natus dolorem maiores delectus quas? Porro quia dicta nostrum debitis illo!</span>
+                </div>
+            </div>
+            <div class="message__column">
+                <span class="message-time">오후 2:56</span>
+            </div>
+        </div>
+    </main>
+    <form class="chat-input">
+        <div class="chat-input__row">
+            <textarea></textarea>
+        </div>
+        <div class="chat-input__row">   
+            <div class="chat-input__imoticon">
+                <i class="fa-regular fa-face-smile"></i>
+                <i class="fa-regular fa-clock"></i>
+                <i class="fa-solid fa-paperclip"></i>
+                <i class="fa-solid fa-camera"></i>
+            </div>
+            <div class="chat-input__column">
+                <input type="range" name="transparency"/>
+                <button>전송</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
+
+

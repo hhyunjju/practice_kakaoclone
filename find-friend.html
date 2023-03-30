@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friend</title>
+    <title>Find-Friend__chat</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
     <nav class="nav nav__friend">
         <div class="main-nav">  
-            <a class="friend-icon" href="friend.html">
+            <a class="friend-icon" href="friend.html" title="친구">
                 <i class="fa-solid fa-user"></i>
             </a>
-            <a class="chat-icon" href="chat.html">
+            <a class="chat-icon" href="chat.html" title="채팅">
                 <i class="fa-solid fa-comment"></i>
                 <span class="red-badge">535</span>
             </a>
-            <a class="more-icon" href="more.html">
+            <a class="more-icon" href="more.html" title="더보기">
                 <i class="fa-solid fa-ellipsis"></i>
                 <span class="red-dot">N</span>
                 <!-- 형제끼리는 absolute-relative관계 형성 불가. -->
@@ -30,7 +30,7 @@
             <i class="fa-solid fa-gear"></i>
         </div>
     </nav>
-    <main class="main-frame">
+    <div class="top-fixed">
         <div class="status-bar">
             <h4 class="status-bar__title">친구</h4>
             <div class="status-bar__icons">
@@ -55,6 +55,8 @@
             </div>
             
         </form>
+    </div>
+    <main class="main-frame main-frame__find">
         <div class="user-component user-component--lg">
             <div class="user-component__column">
                 <div  class="user-imgbox">
@@ -143,7 +145,7 @@
                     <div class="user-component">
                         <div class="user-component__column user-component__column--sm">
                             <div  class="user-imgbox user-imgbox--sm">
-                                <img src="screenshots/김현주프사.jpg"/>
+                                <img src="screenshots/조성진.jpg"/>
                             </div>
                             <div class="user-component__info">
                                 <span class="user-name">조성진</span>
@@ -159,7 +161,7 @@
                     <div class="user-component">
                         <div class="user-component__column user-component__column--sm">
                             <div  class="user-imgbox user-imgbox--sm">
-                                <img src="screenshots/김현주프사.jpg"/>
+                                <img src="screenshots/이도현.jpg"/>
                             </div>
                             <div class="user-component__info">
                                 <span class="user-name">이도현</span>
@@ -175,7 +177,7 @@
                     <div class="user-component">
                         <div class="user-component__column user-component__column--sm">
                             <div  class="user-imgbox user-imgbox--sm">
-                                <img src="screenshots/김현주프사.jpg"/>
+                                <img src="screenshots/조승우.jpeg"/>
                             </div>
                             <div class="user-component__info">
                                 <span class="user-name">조승우</span>

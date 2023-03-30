@@ -1,3 +1,214 @@
-.user-component__column img{
-    width:30px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-Friend</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body class="add-friend__body">
+    <nav class="nav nav__friend">
+        <div class="main-nav">  
+            <a class="friend-icon" href="friend.html" title="친구">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <a class="chat-icon" href="chat.html" title="채팅">
+                <i class="fa-solid fa-comment"></i>
+                <span class="red-badge">535</span>
+            </a>
+            <a class="more-icon" href="more.html" title="더보기">
+                <i class="fa-solid fa-ellipsis"></i>
+                <span class="red-dot">N</span>
+                <!-- 형제끼리는 absolute-relative관계 형성 불가. -->
+            </a>
+        </div>
+        <div class="sub-nav">
+            <i class="fa-regular fa-face-grin"></i>
+            <i class="fa-regular fa-bell-slash"></i>
+            <i class="fa-solid fa-gear"></i>
+        </div>
+    </nav>
+    <main class="main-frame">
+        <div class="status-bar">
+            <h4 class="status-bar__title">친구</h4>
+            <div class="status-bar__icons">
+                <a href="find-friend.html" title="통합검색">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="add-friend.html" title="친구 추가">
+                    <i class="fa-solid fa-user-plus"></i>
+                </a>
+            </div>
+        </div>
+        <div class="user-component user-component--lg">
+            <div class="user-component__column">
+                <div  class="user-imgbox">
+                    <img src="screenshots/김현주프사.jpg"/>
+                </div>
+                <div class="user-component__info">
+                    <span class="user-name">김현주</span>
+                    <!-- <span class="user-state"></span> -->
+                </div>
+            </div>
+            <div class="user-component__column">
+                <span class="user-subtitle">상태메시지 올리기</span>
+            </div>
+        </div>
+        <div class="user-list-frame">
+            <div class="list-heading">
+                <h6>내 멀티프로필</h6>
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="user-component user-component--multiprofile">
+                <div class="user-component__column user-component__column--sm">
+                    <div  class="user-imgbox user-imgbox--sm user-imgbox--multiprofile">
+                        <!-- <img src="screenshots/김현주프사.jpg"/> -->
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="user-component__info">
+                        <span class="user-name">친구별로 다른 프로필을 설정해보세요!</span>
+                        <!-- <span class="user-state"></span> -->
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <!-- <span class="user-subtitle">상태메시지 올리기</span> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="user-list-frame">
+            <div class="list-heading">
+                <h6>생일인 친구</h6>
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column user-component__column--sm">
+                    <div  class="user-imgbox user-imgbox--sm">
+                        <img src="screenshots/마루.jpg"/>
+                    </div>
+                    <div class="user-component__info">
+                        <div class="user-name"> 
+                            <span>강마루</span>
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </div>
+                        <!-- <span class="user-state"></span> -->
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span class="user-subtitle">선물하기</span>
+                </div>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column user-component__column--sm">
+                    <div  class="user-imgbox user-imgbox--sm user-imgbox--birthday">
+                        <!-- <img src="screenshots/마루.jpg"/> -->
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </div>
+                    <div class="user-component__info">
+                        <div class="user-name"> 
+                            <span class="user-name__name">친구의 생일을 확인해보세요!</span>
+                            <span class="user-name__count">13</span>
+                        </div>
+                        <!-- <span class="user-state"></span> -->
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <!-- <span class="user-subtitle">선물하기</span> -->
+                </div>
+            </div>
+        </div>
+        <!-- 친구 리스트 -->
+        <div class="user-list-frame">
+            <div class="list-heading">
+                <h6>친구  309</h6>
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <ul class="friend-list">
+                <li class="friend-list__list">
+                    <div class="user-component">
+                        <div class="user-component__column user-component__column--sm">
+                            <div  class="user-imgbox user-imgbox--sm">
+                                <img src="screenshots/김현주프사.jpg"/>
+                            </div>
+                            <div class="user-component__info">
+                                <span class="user-name">조성진</span>
+                                <span class="user-state">'하고 싶다'보다는 '할 수 있다'</span>
+                            </div>
+                        </div>
+                        <div class="user-component__column">
+                            <span class="user-subtitle">Blue - 태연 (TAEYEON) ▶</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="friend-list__list">
+                    <div class="user-component">
+                        <div class="user-component__column user-component__column--sm">
+                            <div  class="user-imgbox user-imgbox--sm">
+                                <img src="screenshots/김현주프사.jpg"/>
+                            </div>
+                            <div class="user-component__info">
+                                <span class="user-name">이도현</span>
+                                <!-- <span class="user-state"></span> -->
+                            </div>
+                        </div>
+                        <div class="user-component__column">
+                            <span class="user-subtitle">내 맘을 볼 수 있나요 - 헤이즈 (Heize) ▶</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="friend-list__list">
+                    <div class="user-component">
+                        <div class="user-component__column user-component__column--sm">
+                            <div  class="user-imgbox user-imgbox--sm">
+                                <img src="screenshots/김현주프사.jpg"/>
+                            </div>
+                            <div class="user-component__info">
+                                <span class="user-name">조승우</span>
+                                <!-- <span class="user-state"></span> -->
+                            </div>
+                        </div>
+                        <div class="user-component__column">
+                            <span class="user-subtitle">Caffeine - Akiyama Kiro ▶</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <div class="bottom-bar">
+        <img src="screenshots/바텀바.PNG"/>
+        <div class="bottom-bar__text">
+            <h6 class="bottom-bar__description">채용확정형 교육생 모집 / SW취업 프리패스!</h6>
+            <span class="bottom-bar__title">한국소프트웨어산업협회</span>
+        </div>
+    </div>
+    <div class="black-frame">
+    </div>
+    <div class="add-friend add-friend-address">
+        <div class="back-to-friend">
+            <a href="friend.html">x</a>
+        </div>
+        <div class="add-friend__head">
+            <h4>친구 추가</h4>
+        </div>
+        <div class="add-friend__title">
+            <h6><a href="add-friend.html">연락처로 추가</a></h6>
+            <h6><a href="add-friend-id.html">ID로 추가</a></h6>
+        </div>
+        <form class="add-by-address">
+            <div>
+                <input type="text" placeholder="친구 이름" maxlength="20">
+                <input type="tel" placeholder="전화번호"/>
+                <span>친구의 이름과 전화번호를 입력해주세요.</span>
+            </div>
+            <button>친구 추가</button>
+        </form> 
+    </div>
+
+</body>
+</html>
+
+
+

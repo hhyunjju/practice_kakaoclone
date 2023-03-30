@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friend</title>
+    <title>Add-Friend</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
-<body>
+<body class="add-friend__body">
     <nav class="nav nav__friend">
         <div class="main-nav">  
             <a class="friend-icon" href="friend.html" title="친구">
@@ -30,7 +30,7 @@
             <i class="fa-solid fa-gear"></i>
         </div>
     </nav>
-    <div class="top-fixed">         
+    <main class="main-frame">
         <div class="status-bar">
             <h4 class="status-bar__title">친구</h4>
             <div class="status-bar__icons">
@@ -42,8 +42,6 @@
                 </a>
             </div>
         </div>
-    </div>
-    <main class="main-frame main-frame__normal">
         <div class="user-component user-component--lg">
             <div class="user-component__column">
                 <div  class="user-imgbox">
@@ -132,7 +130,7 @@
                     <div class="user-component">
                         <div class="user-component__column user-component__column--sm">
                             <div  class="user-imgbox user-imgbox--sm">
-                                <img src="screenshots/조성진.jpg"/>
+                                <img src="screenshots/김현주프사.jpg"/>
                             </div>
                             <div class="user-component__info">
                                 <span class="user-name">조성진</span>
@@ -148,7 +146,7 @@
                     <div class="user-component">
                         <div class="user-component__column user-component__column--sm">
                             <div  class="user-imgbox user-imgbox--sm">
-                                <img src="screenshots/이도현.jpg"/>
+                                <img src="screenshots/김현주프사.jpg"/>
                             </div>
                             <div class="user-component__info">
                                 <span class="user-name">이도현</span>
@@ -164,7 +162,7 @@
                     <div class="user-component">
                         <div class="user-component__column user-component__column--sm">
                             <div  class="user-imgbox user-imgbox--sm">
-                                <img src="screenshots/조승우.jpeg"/>
+                                <img src="screenshots/김현주프사.jpg"/>
                             </div>
                             <div class="user-component__info">
                                 <span class="user-name">조승우</span>
@@ -186,8 +184,29 @@
             <span class="bottom-bar__title">한국소프트웨어산업협회</span>
         </div>
     </div>
+    <div class="black-frame">
+    </div>
+    <div class="add-friend add-friend-id">
+        <div class="back-to-friend">
+            <a href="friend.html">x</a>
+        </div>
+        <div class="add-friend__head">
+            <h4>친구 추가</h4>
+        </div>
+        <div class="add-friend__title">
+            <h6><a href="add-friend.html">연락처로 추가</a></h6>
+            <h6><a href="add-friend-id.html">ID로 추가</a></h6>
+        </div>
+        <form class="add-by-address">
+            <div>
+                <input type="text" placeholder="친구 카카오톡 ID" maxlength="20">
+                <span>카카오톡 ID를 등록하고 검색을 허용한 친구만 찾을 수 있습니다.</span>
+            </div>
+        </form> 
+    </div>
 
 </body>
 </html>
+
 
 

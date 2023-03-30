@@ -1,0 +1,97 @@
+.more__user-info--column img{
+    width: 35px;
+}
+.more__user-info--row{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.more__user-info--column{
+    display:flex;
+    flex-direction: column;
+}
+.more__user-name{
+    font-size: 14px;
+    padding-bottom: 7px;
+}
+.more__user-email{
+    font-size: 10px;
+    color:rgba(0,0,0,0.7);
+}
+.more__user-info--row:last-child{
+    font-size: 11px;
+    border-top: var(--main-border);
+}
+.more__user-info{
+    background-color: #FAFAFA;
+    border: var(--main-border);
+    margin-top: 15px;
+}
+.more__user-info--row{
+    padding: 14px;
+}
+.more__user-info--column i{
+    color:rgba(0,0,0,0.4);
+}
+.icon-group__row{
+    display:flex;
+    justify-content: space-between;
+}
+.icon-group__one{
+    width:60px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon-group h6{
+    font-size: 11px;
+    color: rgba(0,0,0,0.6);
+}
+.icon-group i{
+    font-size: 20px;
+    padding-bottom: 14px;
+}
+.icon-group__one{
+    padding:12px 0;
+}
+.icon-group{
+    padding: 20px 0;
+    border-bottom: var(--main-border);
+}
+.more__info span:first-child{
+    font-weight: 600;
+}
+.more__info span:last-child{
+    color:rgba(0,0,0,0.5);
+}
+.more__animation{
+    font-size: 13px;
+    margin-top: 42px;
+}
+.animation-imgbox{
+    margin-top: 20px;
+    height: 30px;
+    overflow:hidden;
+}
+.more__animation{
+    animation: show 8s linear infinite running forwards;
+    will-change:transform;
+}
+.more__info{
+    margin-bottom:30px;
+}
+@keyframes show{ 
+    0% {transform:translatey(0px);}
+    10% {transform:translatey(-42px);}
+    30% {transform:translatey(-42px);}
+    40% {transform:translatey(-84px);}
+    60%{transform:translatey(-84px);}
+    70%{transform:translatey(-126px);}
+    90%{transform:translatey(-126px);}
+    100%{transform:translatey(-158px);}
+}
+.more__user-info a:hover .more__user-info--row{
+    background-color: rgba(0,0,0,0.05);
+}
+/* a아래에 있는 class만 선택된 이유는 state은 해당 state가 걸려있는 그 안의 덩어리만 선택할 수 있기 때문. A가 state 조건문이면 a b c d를 선택할 수 있는거지 ㄱㄴㄷㄹ는 불가. */

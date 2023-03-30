@@ -20,4 +20,20 @@
 .status-bar__icons a:hover{
     background-color:rgba(0,0,0,0.02);
 }
-
+.status-bar__text{
+    display:flex;
+    align-items: center;
+}
+.status-bar__text span{
+    font-size:10px;
+    zoom:0.8;
+    margin-left: 3px;
+}
+.top-fixed{
+    background-color:white;
+    position:fixed;
+    width:100vw;
+    top:0;
+    left:0;
+    z-index:5;
+}

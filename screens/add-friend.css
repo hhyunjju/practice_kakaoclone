@@ -1,0 +1,98 @@
+.add-friend{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    height:410px;
+    width: 270px;
+    background-color: white;
+    position:absolute;
+    z-index:40;
+        /* 화면의 정중앙이 .add-friend의 왼쪽 위 꼭지점이 됨. */
+    top:50%;
+    left:50%;
+    /* 도형의 50%만큼 위쪽과 왼쪽으로 당겨 가운데로 맞춘다. */
+    transform: translate(-50%,-50%);
+}
+/* .add-friend__body nav, .add-friend__body .main-frame:not(.bottom-bar){
+    opacity:0.2;
+}
+not:은 같은 항렬? 같은 지위에 있는 selector로 묶어줘야하는 듯. */
+.black-frame{
+    position:absolute;
+    top:0;
+    z-index:20;
+    height:100vh;
+    width:100vw;
+    background-color: rgba(0,0,0,0.4);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-friend__body{
+    overflow:hidden;
+}
+
+.add-friend__title{
+    display:flex;
+    font-size: 12px;
+    border-bottom: var(--main-border);
+}
+/* padding으로 전체 틀의 너비가 변하는 게 고민일 때는 그 아래 항목의 padding을 대신 조정한다. */
+.add-friend__head{
+    padding:20px 15px 30px 15px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.4);
+}
+.add-friend__title{
+    padding: 0px 15px 0px 15px;
+}
+.add-by-address{
+    padding:30px 15px 10px 15px;
+}
+.add-friend-address .add-friend__title h6:first-child{
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-right: 10px;
+}
+.add-friend-id .add-friend__title h6:last-child{
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-left: 10px;
+}
+.add-by-address input{
+    border:none;
+    border-bottom: var(--main-border);
+    width:100%;
+    margin-bottom: 15px;
+    font-size: 12px;
+    padding-bottom: 8px;
+}
+.add-by-address input::placeholder{
+    color: rgba(0,0,0,0.4);
+    /* letter-spacing: -0.05em; */
+}
+.add-by-address span{
+    font-size: 11px;
+    color: rgba(0,0,0,0.4);
+    letter-spacing: 0.05em;
+}
+.add-by-address button{
+    transform: translate( 165px,120px);
+    border:none;
+    font-size: 12px;
+    color: rgba(0,0,0,0.4);
+    padding: 10px 10px;
+}
+.add-by-address button:hover{
+    background-color:#FEE500;
+    color:black;
+}
+.add-by-address input:focus{
+    outline:none;
+    border-bottom: 1px solid black;
+}
+.back-to-friend{
+    display:flex;
+    justify-content: flex-end;
+    color: rgba(0,0,0,0.4);
+    padding-top: 5px;
+    padding-right: 8px;
+}

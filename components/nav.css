@@ -27,6 +27,9 @@
     margin-bottom:20px;
     opacity:0.8;
 }
+.fa-user:hover, .fa-comment:hover, .fa-ellipsis:hover{
+    opacity: 0.3;
+}
 
 .nav__friend .fa-user, .nav__chat .fa-comment, .nav__more .fa-ellipsis{
     opacity:0.8;

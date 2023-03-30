@@ -3,6 +3,9 @@
 
 /* screens css */
 @import "screens/find-friend.css";
+@import "screens/more.css";
+@import "screens/add-friend.css";
+@import "screens/chat-room.css";
 
 /* components css */
 @import "components/nav.css";
@@ -19,6 +22,20 @@ body{
 .main-frame{
     margin-left:80px;
     margin-right:20px;
-    padding-top:35px;
     /* margin-top으로 하면 screen자체의 길이가 길어져서 vh로 높이를 설정해놨던 nav바의 위치도 내려간다. */
+}
+.main-frame__normal{
+    padding-top:65px;
+}
+.top-fixed{
+    padding-left:80px;
+    padding-right:20px;
+    padding-top:35px;
+    box-sizing:border-box;
+}
+.main-frame__find{
+    padding-top:105px;
+}
+.main-frame__more{
+    padding-top:35px;
 }
